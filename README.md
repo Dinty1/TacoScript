@@ -11,3 +11,5 @@ Function list:
     glorify <item>
     tacotale
     tacoprint <text>
+
+Seperate all functions with a semicolon.
