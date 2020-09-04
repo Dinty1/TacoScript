@@ -1,12 +1,13 @@
 /*
 TacoScript
-V1.0.0
+V1.1.0
 By DintyB
 
 Available functions:
     eat <item>
     glorify <item>
     tacotale
+    tacoprint <text>
 */
 
 
@@ -38,11 +39,16 @@ function runcommand(rawcommand){
             else return error(rawcommand);
         case 'tacotale':
             return 'Once upon a time, there was a taco. One day, it got eaten by a very hungry server owner. The end.'
+        case 'tacoprint':
+            let text = command.slice(1).join(' ');
+            if(command[1]) return text;
+            else return error(rawcommand);
         default:
-            return '';
+            if(rawcommand.trim() !== '' && rawcommand.trim() !== ';') return error(rawcommand)
+            else return '';
     }
 }
 
 function error(cmd){
-    console.log(`Error while running command "${cmd}"`);
+    console.log(`Error while running function "${cmd}". No, I don't know what the error is. Go look for it yourself.`);
 }
