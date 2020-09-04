@@ -3,7 +3,7 @@
 Instructions:
 
 1) Create a file called "index.taco". This will be your script file.
-2) When you wish to run the script, run "node ." in your terminal. You should see output there.
+2) When you wish to run the script, install node.js, navigate to that directory and run "node ." in your terminal.
 
 Function list:
 
