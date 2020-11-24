@@ -12,4 +12,4 @@ Function list:
     tacotale
     tacoprint <text>
 
-Seperate all functions with a semicolon.
+Seperate all commands with a semicolon.
